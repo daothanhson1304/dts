@@ -1,0 +1,129 @@
+@import url('https://fonts.google.com/specimen/JetBrains+Mono');
+
+*{
+  box-sizing: border-box;
+}
+html,body{
+  font-family: 'JetBrain Mono', cursive;
+  
+}
+body{
+  background-image:
+  linear-gradient(135deg,#f16828,#ffcc6f);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+/* Container */
+
+.container{
+  width: 30rem;
+  min-height: 20rem;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+header{
+  background-color: rgba(255,73,36,0.83);
+  display: flex;
+  justify-content: center;
+}
+.logo{
+  width: 150px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  top: 40px;
+}
+.order{
+  flex: 1;
+  background-color: #fff;
+  padding: 20px 20px;
+}
+
+.header{
+  text-align: center;
+  font-size: 2rem;
+  
+}
+#order-items{
+  list-style: none;
+  padding-left: 0;
+}
+
+
+
+.btn-checkout{
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: rgba(255,73,36,1);
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.order button{
+  padding: 10px 20px;
+  border: none;
+  /* outline: none; */
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.btn-checkout:hover{
+  background-color:  rgb(219, 55, 22);
+}
+#btn-add{
+  width: 12rem;
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid gray;
+  
+  
+}
+.order-summary{
+  background-color: #efefef;
+  padding: 10px;
+  margin: 20px 0;
+ 
+}
+.order-summary p{
+  margin: 20px 0;
+}
+
+.money{
+  float: right;
+}
+
+
+.order-item{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.item-quantity{
+  flex: 1;
+}
+.item-quantity input{
+  width: 20%;
+  border: none;
+  outline: none;
+  flex-basis: 10rem;
+  margin-left: 20px;
+}
+.item-name{
+  flex-basis: 10rem;
+}
+.item-price{
+  margin-left: auto;
+}
+.order-item button{
+  padding: 0.3rem;
+}
+
